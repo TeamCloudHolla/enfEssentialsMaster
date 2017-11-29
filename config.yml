@@ -1,0 +1,45 @@
+Cooldowns: #Seconds
+    test;3
+    message: "§7You must wait §6%cooldown% Seconds §7until you can use this command again!"
+max_players:
+    amount: 150
+    message: '&cSorry, this server is full! &bshop.enforcedmc.com&c to &ebypass.'    
+disable_commands:
+    commands:
+        - /help
+        - /icanhasbukkit
+        - /version
+        - /ver
+        - /plugins
+        - /pl
+        - /about
+        - /?
+    message: '&7(!) &4You are not permitted to use &e&l%command%'
+chat:
+    clear_chat:
+        message: '&b%player% &7has cleared the chat'
+        noperm: '&cNo Permission!'
+    chat_toggle:
+        message_on: '&b%player% &7has enabled chat'
+        message_off: '&b%player% &7has disabled chat'
+        chat_off: '&cChat is disabled! If you believe this is an error, contact a developer.'
+        noperm:  '&cYou are not permitted to use &e&l/chattoggle'
+auto_restart:
+    time: 86400
+    kick: '&b&lRESTART: &7&oServer will be back up again in about &a&l30 SECONDS'
+    warning1:
+        message: '&b&lRESTART: &cServer will be restarting in &7&l1 &chour'
+        time: 3600
+    warning2:
+        message: '&b&lRESTART: &cServer will be restarting in &7&l30 &cminutes'
+        time: 1800
+    warning3:
+        message: '&b&lRESTART: &cServer will be restarting in &7&l15 &cminutes'
+        time: 900
+    warning4:
+        message: '&b&lRESTART: &cServer will be restarting in &7&l1 &cminute'
+        time: 60
+    warning5:
+        message: '&b&lRESTART: &cServer will be restarting in &7&l10 &cseconds'
+        time: 10
+    restarting: '&b&lRESTART: &c&lServer is restarting'
